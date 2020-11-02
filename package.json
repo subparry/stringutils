@@ -1,0 +1,17 @@
+{
+  "name": "stringutils",
+  "version": "1.0.0",
+  "description": "A small class with static methods to handle string manipulation and randomization",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "strings",
+    "utils",
+    "random",
+    "id"
+  ],
+  "author": "Adrian Parry",
+  "license": "ISC"
+}
