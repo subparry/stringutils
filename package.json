@@ -1,5 +1,5 @@
 {
-  "name": "stringutils",
+  "name": "@subparry/stringutils",
   "version": "1.0.0",
   "description": "A small class with static methods to handle string manipulation and randomization",
   "main": "index.js",
@@ -16,5 +16,8 @@
   "license": "ISC",
   "devDependencies": {
     "jest": "^26.6.2"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
