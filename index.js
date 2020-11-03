@@ -5,17 +5,23 @@ class Strings {
   }
 
   static capitalize(str) {
+    if (typeof str !== "string") {
+      throw new Error("Argument must be of type string");
+    } else if (str.length === 0) {
+      return "";
+    }
     return `${str[0].toUpperCase()}${str.slice(1)}`
   }
 
   static randomize(size = 10) {
-    const randInt = Math.floor(Math.random() * 10 ** size)
-    const codes = `${randInt}`.split('')
-    return codes
-      .map((n) => (Math.random() > 0.5 ? LETTERS[parseInt(n)] : n))
-      .join('')
+    const codes = [];
+    for (let i = 0; i < size; i++) {
+      codes.push(Math.floor(Math.random() * 10));
+    }
+    
+    return codes.map((n) => (Math.random() > 0.5 ? LETTERS[n] : n)).join("");
   }
 }
 
-export default Strings
+module.exports = Strings;
 
